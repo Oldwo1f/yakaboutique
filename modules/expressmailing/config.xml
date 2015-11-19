@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>expressmailing</name>
+	<displayName><![CDATA[Express-Mailing]]></displayName>
+	<version><![CDATA[1.1.7]]></version>
+	<description><![CDATA[First Newletter module fully integrated with the PrestaShop interface, including emailing with 9,000 free emails per month i.e. 300 per day, and the ability to send FAX and SMS at very low prices.]]></description>
+	<author><![CDATA[Axalone France]]></author>
+	<tab><![CDATA[emailing]]></tab>
+	<confirmUninstall><![CDATA[Are you sure you want to uninstall ?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module> 

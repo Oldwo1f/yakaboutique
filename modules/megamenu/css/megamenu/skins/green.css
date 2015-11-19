@@ -1,0 +1,68 @@
+.mega-menu ul, .mega-menu ul li {list-style: none;}
+.mega-menu ul {position: relative; padding: 0; margin: 0;}
+.mega-menu ul li ul {display: none;}
+.mega-menu .sub {display: none;}
+.mega-menu .sub ul {display: block;}
+.green ul.mega-menu li .sub li.mega-hdr{box-sizing:content-box;background:red;}
+.green {font: normal 13px Arial, sans-serif; line-height: 16px;}
+.green ul.mega-menu, .green ul.mega-menu, .green ul.mega-menu li {margin: 0; padding: 0; border: none;}
+.green ul.mega-menu {    background: transparent repeat-x;
+ width: 100%; height: 40px;  position: relative;}
+.green ul.mega-menu li {list-style:none;float: left; margin: 0; padding: 0; font-size: 16px; font-weight: normal;font-family: octin;}
+.green ul.mega-menu li a {float: left; display: block; color: #322406; padding: 12px 38px 12px 25px;font-size: 22px; font-weight: normal;  text-decoration: none;}
+.green ul.mega-menu li a.dc-mega {position: relative;}
+.green ul.mega-menu li a .dc-mega-icon {display: none; position: absolute; width: 8px; height: 6px;  top: 18px; right: 15px; background: url(images/arrow.png) no-repeat 0 100%;}
+.green ul.mega-menu li.mega-hover a, .green ul.mega-menu li a:hover {background-position: 100% -40px; color: #322406; text-shadow: none;}
+.green ul.mega-menu li.mega-hover a .dc-mega-icon {background-position: 0 100%;}
+.green ul.mega-menu li .sub-container {position: absolute;  background: white url('../../../../../themes/yaka/img/bg-pattern.jpg') repeat-x;padding-left: 20px; margin-left: -3px;}
+.green ul.mega-menu li .sub {background: none; padding: 20px 20px 20px 10px;}
+.green ul.mega-menu li .sub-container.mega .sub {padding: 20px 20px 10px 0;}
+.green ul.mega-menu li .sub .row {font-size: 20px;width: 100%; overflow: hidden; clear: both;margin-left:0px;}
+.green ul.mega-menu li .sub li {background:red;list-style: none; float: none; width: 170px; font-size: 1em; font-weight: normal;}
+.green ul.mega-menu li .sub li.mega-hdr {cursor:pointer;margin: 0 10px 10px 0; float: left;}
+.green ul.mega-menu li .sub li.mega-hdr.last {margin-right: 0;}
+.green ul.mega-menu li .sub a {min-width:220px;background: none; border: none; text-shadow: none; color: #111; padding: 7px 10px; display: block; float: none; text-decoration: none; font-size: 0.9em;}
+.green ul.mega-menu li .sub li.mega-hdr a.mega-hdr-a {padding: 5px 5px 5px 15px;    min-width: 220px;
+ margin-bottom: 5px; background: transparent; text-transform: uppercase; color: #322406; }
+.green ul.mega-menu li .sub li.mega-hdr a.mega-hdr-a:hover {color: #fff; text-shadow: none;}
+.green ul.mega-menu .sub li.mega-hdr li a {padding: 4px 5px 4px 20px; background: url(images/arrow_off.png) no-repeat 5px 8px; font-weight: normal;}
+.green ul.mega-menu .sub li.mega-hdr li a:hover {color: #a32403; background: #efefef url(images/arrow_on.png) no-repeat 5px 8px;}
+.green ul.mega-menu .sub ul li {padding-right: 0;}
+.green ul.mega-menu li .sub-container.non-mega .sub {padding: 20px 20px 20px 0;}
+.green ul.mega-menu li .sub-container.non-mega li {padding: 0; width: 172px; margin: 0;}
+.green ul.mega-menu li .sub-container.non-mega li a {padding: 7px 5px 7px 22px; background: url(images/arrow_off.png) no-repeat 7px 10px;}
+.green ul.mega-menu li .sub-container.non-mega li a:hover {color: #a32403; background: #efefef url(images/arrow_on.png) no-repeat 7px 10px;}
+/* RESPONSIVE */
+.green a#home {background:transparent;padding: 8px 10px 8px 10px; border-right: 1px solid #A0D424;}
+.green li.mobile{height:40px;}
+.green a#toggleMenu{background:transparent;}
+
+.toggleMenu {display:  none;background: #666;padding: 12px 15px;color: #fff;}
+#eb-main-wrapper {z-index: 1;}
+#eb-lower-header {min-height: 40px;}
+@media screen and (min-width: 999px) {
+    .green ul.mega-menu li {  display:block !important; }
+    .green #home { display: block; }
+    .green #toggleMenu{display: none;}
+}
+@media screen and (max-width: 999px) { 
+    .active, .green ul.mega-menu > li a#toggleMenu {display: block;float:right;}
+    .green ul.mega-menu > li a#home {display:inline-block;}
+    .green ul.mega-menu > li:not(.mobile){display:none;}
+    
+    .green ul.mega-menu > li, .green ul.mega-menu > li a  {float: none;} 
+    .green ul.mega-menu > li{position: relative;}
+    .green ul.mega-menu li .sub li.mega-hdr { margin: 0 10px 5px 0;}
+    .green ul.mega-menu li .sub-container.mega .sub {padding: 0 9px 10px 0; }
+    .green ul.mega-menu {width: 100%;}
+    .green ul.mega-menu li .sub li.mega-hdr {height: auto !important;}
+    .green ul.mega-menu li .sub li.mega-hdr.hasimage {background: none !important;padding-top: 0px !important;}
+    .green ul.mega-menu li .sub li { width: 100%; } 
+    .green ul.mega-menu .row { width: 100% !important; }
+    .green ul.mega-menu div.sub-container {width: 100% !important;} 
+    .green ul.mega-menu li .sub-container {padding-left: 8px; left:0 !important; margin-left: -3px !important;}
+}
+
+@media only screen and (max-width: 530px) { 
+    #eb-mobile-nav {right: 5px;top: 131px;left:auto;}  
+}

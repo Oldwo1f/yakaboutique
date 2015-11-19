@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>pproperties</name>
+	<displayName><![CDATA[Product Properties Extension]]></displayName>
+	<version><![CDATA[2.14]]></version>
+	<description><![CDATA[Extends product properties and add support for products with fractional units of measurements (for example: weight, length, volume)]]></description>
+	<author><![CDATA[psandmore]]></author>
+	<tab><![CDATA[administration]]></tab>
+	<confirmUninstall><![CDATA[When you uninstall this module the user data is not lost and remains in the database. It will be available next time you install the module. Are you sure you want to remove the Product Properties Extension module?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

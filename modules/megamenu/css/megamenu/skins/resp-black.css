@@ -1,0 +1,83 @@
+#megamenu_wrapper a {text-decoration: none;}
+#megamenu_wrapper {
+    width: 90%;
+    max-width: 900px;
+    margin: 10px auto;
+}
+#megamenu_wrapper .toggleMenu {
+    display:  inline-block;
+    background: #666;
+    padding: 10px 15px;
+    color: #fff;
+}
+#mega-menu-1 {
+    list-style: none;
+     *zoom: 1;
+     background:#175e4c;
+}
+#mega-menu-1:before,
+#mega-menu-1:after {
+    content: " "; 
+    display: table; 
+}
+#mega-menu-1:after {
+    clear: both;
+}
+#mega-menu-1 ul {
+    list-style: none;
+	display: block;
+    width: 100%;
+}
+#mega-menu-1 a {
+    padding: 10px 15px;
+    color:#fff;
+}
+#mega-menu-1 li {
+    position: relative;
+}
+#mega-menu-1 > li {
+    float: none;
+    border-top: 1px solid #104336;
+}
+#mega-menu-1 > li > .parent {
+    background-image: url("images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+#mega-menu-1 > li > a {
+    display: block;
+}
+#mega-menu-1 li  ul {
+    position: absolute;
+    left: -9999px;
+}
+#mega-menu-1 > li.hover > ul {
+    left: 0;
+	position: static;
+}
+#mega-menu-1 li li.hover ul {
+    left: 100%;
+    top: 0;
+	position: static;
+}
+#mega-menu-1 li li a {
+    display: block;
+    background: #1d7a62;
+    position: relative;
+    z-index:100;
+    border-top: 1px solid #175e4c;
+}
+#mega-menu-1 li li li a {
+    background:#249578;
+    z-index:200;
+    border-top: 1px solid #1d7a62;
+}
+.active {
+    display: block;
+}
+#mega-menu-1 li li .parent {
+    background-image: url("images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+

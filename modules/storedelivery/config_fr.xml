@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>storedelivery</name>
+	<displayName><![CDATA[Store Delivery]]></displayName>
+	<version><![CDATA[2.0.4]]></version>
+	<description><![CDATA[Permit to choose delivery in store and send an email to store to inform them]]></description>
+	<author><![CDATA[Olivier Michaud]]></author>
+	<tab><![CDATA[others]]></tab>
+	<confirmUninstall><![CDATA[Êtes vous sur de vouloir désinstaller Store Delivery Module?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

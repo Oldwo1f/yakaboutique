@@ -1,0 +1,104 @@
+/**
+* Product Properties Extension
+*
+* @author    PS&More www.psandmore.com <support@psandmore.com>
+* @copyright 2011-2015 PS&More
+* @license   psandmore.com/licenses/sla
+*
+* Do not modify this file. If you need to make changes create file
+* themes/your_theme/css/modules/pproperties/custom.css
+* and add your changes there.
+*/
+
+.normal {font-weight:normal;}
+#powered_by_psandmore.solo {display:block; clear: both; padding: 0.5em; text-align: center;}
+.bottom-footer #powered_by_psandmore {padding-left: 10px;}
+#buy_block #quantity_wanted_p .pp_qty_text {display: block; float: right; line-height: 27px; margin-left: 3px; color:#322406;}
+#buy_block #minimal_quantity_wanted_p {color: red;}
+#buy_block #pp_explanation {clear:left;font-style:italic;padding-bottom: 10px;color: #694a1c;}
+#buy_block #pp_explanation pre {font-family: monospace;font-style:normal;font-size:11px;line-height:11px;margin:0;}
+#buy_block .pp_price_display.pp_price_display_mode_0 {font-weight: bold; color: #333333; margin: 10px 0; font-size: 120%;}
+#buy_block .pp_price_display .ajax-processing {visibility: hidden; display: inline-block; background: url("../img/ajax-processing.gif") no-repeat scroll center center transparent; height: 16px; width: 16px; margin-left: 7px; opacity: 0.6;}
+#buy_block .pp_price_display .ajax-processing.visible {visibility: visible !important;}
+#buy_block .our_price_display .pp_unity_text, #buy_block .our_price_display .pp_price_text {font-weight: normal; font-size: 0.6em;}
+#buy_block .pp_ext_result_quantity {font-weight: bold; padding-bottom: 10px;}
+#buy_block .pp_ext {margin-bottom: 15px; padding: 5px 0; border-bottom: 1px solid #CCCCCC;}
+#buy_block .pp_ext div {padding-bottom: 5px;}
+#buy_block div.pp_ext_title {text-align: center; font-variant: small-caps; padding-bottom: 9px;}
+#buy_block .pp_ext input {border: 1px solid #BDC2C9; width: 50px; margin-left: 5px;}
+#buy_block .pp_ext .pp_ext_prop_property, #buy_block .pp_ext .pp_ext_property {display: inline-block; min-width: 60px;}
+#buy_block .pp_ext_method_wrapper {padding-top: 3px;}
+#buy_block span.pp_ext_result {display: inline-block; padding-left: 5px;}
+#buy_block #pp_price.calculating {text-decoration: line-through; opacity: 0.6;}
+.pp_price_text, .pp_qty_text, .pp_unity_text {white-space:nowrap;}
+.pp_price_text sup, .pp_qty_text sup, .pp_unity_text sup, #pp_explanation sup, .pp_ext sup, .pp_ext_result_quantity sup {color:inherit;}
+.pp_ext_prop_text, .pp_ext_text, #pp_ext_result_quantity {padding-left: 8px;}
+.cart_block .pp_qty_wrapper, #wishlist_block_list .pp_qty_wrapper {display: block; clear: both; color: #9C9B9B; font-size: 12px;}
+.cart_block .pp_ext_prop_data_wrapper {clear: both; color: #9C9B9B; font-size: 11px; padding-bottom: 5px;}
+#order-detail-content tr ul {list-style: none;}
+#order-detail-content .pp_qty_wrapper, #order-detail-content #cart_summary .pp_price_text {clear:both; display:block; white-space:nowrap; margin-top: 5px; font-weight: normal;}
+@media (max-width: 768px) {
+	#order-detail-content #cart_summary .cart_unit .pp_price_text {text-align: center;}
+	#order-detail-content #cart_summary .cart_quantity .pp_qty_wrapper {display: block; text-align: left;}
+}
+#order-detail-content .pp_ext_prop_data_wrapper, #order-detail-content .smartprice-info {margin-top: 5px; font-weight: normal;}
+.wishlist_product_detail .form-group {position: relative;}
+.wishlist_product_detail .pp_qty_text {position: absolute; right: 7px; top: 54%;}
+#cart_summary thead th.cart_unit, #cart_summary thead th.cart_total,
+#cart_summary tbody td.cart_unit, #cart_summary tbody td.cart_total,
+#cart_summary tbody td.cart_unit ul, #cart_summary tbody td.cart_total ul {text-align: center;}
+#cart_summary .cart_item.pp_qty_behavior_1 .cart_quantity .cart_quantity_button {display: none !important;}
+#cart_summary .cart_item.pp_qty_behavior_1 .cart_quantity .ajax-processing {display: inline-block; background: url("../img/ajax-processing.gif") no-repeat scroll center center transparent; height: 16px; width: 16px; margin-left: 7px; opacity: 0.6; vertical-align: middle;}
+#order-detail-content .smartprice_text_total {font-style: italic; font-size: 90%; margin-top: 5px;}
+
+body.pp-positions-visible .pp-position {border: 1px solid #f4c178;}
+body.pp-positions-visible .pp-position .pp-position-header {background-color: #f4c178; color: #8a6d3b; text-align: center; font-weight: bold;}
+
+#measurement_system_fo {float: right; border-left: 1px solid #515151; position: relative;}
+	@media (max-width: 479px) {
+		#measurement_system_fo {width: 25%;}
+	}
+	#measurement_system_fo div.current {
+		font-weight: bold;
+		padding: 8px 10px 10px 10px;
+		line-height: 18px;
+		color: white;
+		text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+		cursor: pointer;
+	}
+	@media (max-width: 479px) {
+		#measurement_system_fo div.current {
+			text-align: center;
+			padding: 9px 5px 10px;
+			font-size: 11px;
+		}
+	}
+	#measurement_system_fo div.current:after {
+		content: "\f0d7";
+		font-family: "FontAwesome";
+		font-size: 18px;
+		line-height: 18px;
+		color: #686666;
+		vertical-align: -2px;
+		padding-left: 12px;
+	}
+	@media (max-width: 479px) {
+		#measurement_system_fo div.current:after {
+		  padding-left: 2px;
+		  font-size: 13px;
+		  line-height: 13px;
+		  vertical-align: 0;
+		}
+	}
+	#measurement_system_fo ul {
+		display: none;
+		position: absolute;
+		top: 37px;
+		left: 0;
+		width: 157px;
+		background: #333333;
+		z-index: 2;
+	}
+	#measurement_system_fo ul li {color: white; line-height: 35px; font-size: 13px;}
+	#measurement_system_fo ul li a {padding: 0 10px 0 12px; display: block; color: white;}
+	#measurement_system_fo ul li.selected, #measurement_system_fo ul li:hover a {background: #484848;}

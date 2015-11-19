@@ -1,0 +1,16 @@
+.breadcrumb-container .icon-AdminParentModules:before {
+    content: "\f0e0";
+}
+
+.icon-AdminMarketingX:before,
+.icon-AdminMarketingE:before {
+    content: "\f0e0";
+}
+
+.icon-AdminMarketingF:before {
+    content: "\f02f";
+}
+
+.icon-AdminMarketingS:before {
+    content: "\f10b";
+}
