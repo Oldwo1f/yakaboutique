@@ -159,10 +159,8 @@
 										maxValue = val;
 									}
 								});
-								console.log('TOTOTOTTOOT222');
-								$('.mega-unit > a',this).css('height',25+'px');
-								$('.mega-unit > a',this).css('background','red !important');
-								$(this).css('width',300+'px');
+								$('.mega-unit > a',this).css('height',maxValue+'px');
+								$(this).css('width',inneriw+'px');
 							});
 							
 							// Calc Required Left Margin incl additional required for right align

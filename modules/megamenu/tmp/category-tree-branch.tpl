@@ -5,9 +5,9 @@
 *  International Registered Trademark & Property of Smart Soft
 *}
 
-<li id="menu-item-{$node.id}" class="{if $MEGAMENU_DISPLAYIMAGES == 1} hasimage {/if}" style="{if $MEGAMENU_DISPLAYIMAGES == 1 && $node.currentDepth == 2}background: url('{$node.image}') no-repeat scroll center 0 transparent;padding: {$node.imageheight}px 0 0;{/if}">
-	<a href="{$node.link}" title="{$node.desc|strip_tags|escape:htmlall:'UTF-8'}" class="{if $node.desc == 'display more'} more {else} {/if}" >
-	  {$node.name|escape:html:'UTF-8'}
+<li id="menu-item-{$node.id|escape:'intval':'UTF-8'}" class="{if $MEGAMENU_DISPLAYIMAGES == 1} hasimage {/if}" style="{if $MEGAMENU_DISPLAYIMAGES == 1 && $node.currentDepth == 2}background: url('{$node.image|escape:'htmlall':'UTF-8'}') no-repeat scroll center 0 transparent;padding: {$node.imageheight|escape:'intval':'UTF-8'}px 0 0;{/if}">
+	<a href="{$node.link|escape:'intval':'UTF-8'}" title="{$node.desc|strip_tags|escape:'htmlall':'UTF-8'}" class="{if $node.desc == 'display more'} more {else} {/if}" >
+	  {$node.name|escape:'htmlall':'UTF-8'}
 	</a>
 	{if $node.children|@count > 0}
 		<ul>

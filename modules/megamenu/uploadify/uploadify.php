@@ -23,6 +23,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
+include_once('../../../config/config.inc.php');
+include_once('../../../init.php');
 header("Cache-Control: no-cache, must-revalidate");
 header("Expires: 0");
 
@@ -30,7 +32,7 @@ if (!empty($_FILES)) {
 	$tempFile = $_FILES['Filedata']['tmp_name'];
 	$targetPath = $_SERVER['DOCUMENT_ROOT'] . $_REQUEST['folder'] . '/';
     $ext  = pathinfo($_FILES['Filedata']['name'], PATHINFO_EXTENSION);
-	$targetFile =  str_replace('//','/',$targetPath) . $_POST['id'] . "." . $ext;
+	$targetFile =  str_replace('//','/',$targetPath) . Tools::getValue('id') . ".png";
 	
 	// $fileTypes  = str_replace('*.','',$_REQUEST['fileext']);
 	// $fileTypes  = str_replace(';','|',$fileTypes);

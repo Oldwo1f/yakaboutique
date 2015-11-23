@@ -5,25 +5,25 @@
 *  International Registered Trademark & Property of Smart Soft
 *}
 
-<script type='text/javascript' src='{$this_path|escape:'html'}js/jquery.hoverIntent.minified.js'></script>
-<script type='text/javascript' src='{$this_path|escape:'html'}js/jquery.dcmegamenu.1.3.3.js'></script>
+<script type='text/javascript' src='{$this_path|escape:'htmlall':'UTF-8'}js/jquery.hoverIntent.minified.js'></script>
+<script type='text/javascript' src='{$this_path|escape:'htmlall':'UTF-8'}js/jquery.dcmegamenu.1.3.3.js'></script>
 {if $MEGAMENU_COLOR == 'default'}
-  <link href="{$this_path|escape:'html'}css/megamenu/dcmegamenu.css" rel="stylesheet" type="text/css" />
+  <link href="{$this_path|escape:'htmlall':'UTF-8'}css/megamenu/dcmegamenu.css" rel="stylesheet" type="text/css" />
 {else}
-  <link href="{$this_path|escape:'html'}css/megamenu/skins/{$MEGAMENU_COLOR|escape:'html'}.css" rel="stylesheet" type="text/css" />
+  <link href="{$this_path|escape:'htmlall':'UTF-8'}css/megamenu/skins/{$MEGAMENU_COLOR|escape:'htmlall':'UTF-8'}.css" rel="stylesheet" type="text/css" />
 {/if}
 <div style="clear:both;"></div>
-<div id="megamenu_wrapper" class="{$MEGAMENU_COLOR|escape:'html'}" style="opacity:0;padding:0 15px;z-index: 10001;margin:{$MEGAMENU_MARGINTOP|intval}px {$MEGAMENU_MARGINRIGHT|intval}px {$MEGAMENU_MARGINBOTTOM|intval}px {$MEGAMENU_MARGINLEFT|intval}px;width:100%;clear:both;">
+<div id="megamenu_wrapper" class="{$MEGAMENU_COLOR|escape:'htmlall':'UTF-8'}" style="opacity:0;padding:0 15px;z-index: 10001;margin:{$MEGAMENU_MARGINTOP|intval}px {$MEGAMENU_MARGINRIGHT|intval}px {$MEGAMENU_MARGINBOTTOM|intval}px {$MEGAMENU_MARGINLEFT|intval}px;width:100%;clear:both;">
     
 	<ul id="mega-menu-1" class="mega-menu" >
-       <!--  <li class="mobile">
+        <li class="mobile">
             <a href="" id="home">
-                <img src="{$this_path|escape:'html'}css/megamenu/skins/images/home.png" alt="home"/>
+                <img src="{$this_path|escape:'htmlall':'UTF-8'}css/megamenu/skins/images/home.png" alt="home"/>
             </a>
             <a  href="#" id="toggleMenu">
-                <img src="{$this_path|escape:'html'}css/megamenu/skins/images/menu.png" alt="home"/>
+                <img src="{$this_path|escape:'htmlall':'UTF-8'}css/megamenu/skins/images/menu.png" alt="home"/>
             </a>
-        </li> -->
+        </li>
 		{foreach from=$blockCategTree.children item=child name=blockCategTree}
 			{if $smarty.foreach.blockCategTree.last}
 				{include file="$branche_tpl_path" node=$child last='true'}
@@ -45,8 +45,8 @@
                 
 				$('#mega-menu-1').dcMegaMenu({  {/literal}
 			        rowItems: 1,
-			        speed: '{$MEGAMENU_SPEED|escape:"html"}',
-			        effect: '{$MEGAMENU_EFFECT|escape:"html"}',
+			        speed: '{$MEGAMENU_SPEED|escape:'htmlall':'UTF-8'}',
+			        effect: '{$MEGAMENU_EFFECT|escape:'htmlall':'UTF-8'}',
 			        event: 'click',
 			        fullWidth: 1
 			    {literal}  });  
@@ -57,11 +57,11 @@
 			else if (ww >= 768) 
             {
 				 $('#mega-menu-1').dcMegaMenu({  {/literal}
-			        rowItems: '{$MEGAMENU_ROWITEMS|escape:"html"}',
-			        speed: '{$MEGAMENU_SPEED|escape:"html"}',
-			        effect: '{$MEGAMENU_EFFECT|escape:"html"}',
-			        event: '{$MEGAMENU_EVENT|escape:"html"}',
-			        fullWidth: '{$MEGAMENU_FULLWIDTH|escape:"html"}'
+			        rowItems: '{$MEGAMENU_ROWITEMS|escape:'htmlall':'UTF-8'}',
+			        speed: '{$MEGAMENU_SPEED|escape:'htmlall':'UTF-8'}',
+			        effect: '{$MEGAMENU_EFFECT|escape:'htmlall':'UTF-8'}',
+			        event: '{$MEGAMENU_EVENT|escape:'htmlall':'UTF-8'}',
+			        fullWidth: '{$MEGAMENU_FULLWIDTH|escape:'htmlall':'UTF-8'}'
 			    {literal}  });    
 			}      
             $("ul#mega-menu-1 > li").click(function() {

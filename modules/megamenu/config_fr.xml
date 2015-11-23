@@ -2,7 +2,7 @@
 <module>
 	<name>megamenu</name>
 	<displayName><![CDATA[Mega Menu]]></displayName>
-	<version><![CDATA[2.9]]></version>
+	<version><![CDATA[2.9.2]]></version>
 	<description><![CDATA[Mega Drop Down Menu]]></description>
 	<author><![CDATA[DevSoft]]></author>
 	<tab><![CDATA[front_office_features]]></tab>
