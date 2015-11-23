@@ -33,16 +33,16 @@ a.fancybox-nav {
   position: relative;
   display: block;
   cursor: pointer;
-  padding: 5px;
+  /*padding: 5px;*/
   background:rgba(105, 74, 28, 0.1);
-  border-style: solid;
+  border: none;
   box-sizing:border-box;
-border-width: 10px;
+/*border-width: 10px;
 -moz-border-image: url(../img/borderTimbre.png) 12 round;
 -webkit-border-image: url(../img/borderTimbre.png) 12 round;
 -o-border-image: url(../img/borderTimbre.png) 12 round;
 border-image: url(../img/borderTimbre.png) 12  round;
-      border-image-outset: 0px; }
+      border-image-outset: 0px; */}
   @media (max-width: 767px) {
     .pb-left-column #image-block {
       width: 280px;

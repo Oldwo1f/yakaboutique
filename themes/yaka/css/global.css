@@ -1454,8 +1454,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   .form-control:focus {
     border-color: #66afe9;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+     }
   .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
     cursor: not-allowed;
     background-color: #eeeeee; }
@@ -8413,31 +8412,34 @@ body#index .herbe{
 }
 
 header .row #header_logo{
-  padding-top:0px;
+  padding-top:10px;
+  margin-top: -20px;
       width: 328px;
     height: 171px;
-  background:  url('../img/logo-yakaboutique.png') no-repeat ;
+  background:  url('../img/bg-logo.png') no-repeat ;
 }
 
 header .row #search_block_top{
-  padding-top:25px;
-  width: 371px;
-  height: 94px;
-  background:  url('../img/bg-recherche.png') no-repeat ;
+  padding-top:0px;
+  /*width: 371px;*/
+  /*height: 94px;*/
+  /*background:  url('../img/bg-recherche.png') no-repeat ;*/
 }
 header .row .shopping_cart{
   padding-top:25px;
   width: 181px;
-  height: 174px;
-  background:  url('../img/bg-panier.png') no-repeat ;
+  height: 110px;
+  background:  url('../img/bg-panier.png') no-repeat 0px -62px;
 }
 header .row .shopping_cart a{
-    width: 100%;
+    /*width: 100%;*/
     position: relative;
     display: inline-block;
     text-align: center;
     margin-top: 10px;
-
+  float:right;
+}header .row .shopping_cart:hover a{
+    color:#db007b;
 }
 #block_top_menu{
   z-index:9999999;
@@ -8480,25 +8482,29 @@ header .row .shopping_cart a{
 
 .border-timbre{
   background:rgba(105, 74, 28, 0.1);
-  border-style: solid;
+  border:none;
+ /* border-style: solid;
 border-width: 20px;
 -moz-border-image: url(../img/borderTimbre.png) 12 round;
 -webkit-border-image: url(../img/borderTimbre.png) 12 round;
 -o-border-image: url(../img/borderTimbre.png) 12 round;
 border-image: url(../img/borderTimbre.png) 12  round;
-      border-image-outset: 10px;
+      border-image-outset: 10px;*/
 
 }
 .pb-right-column form{
+  border:none;
+  padding-bottom:20px;
+  padding-top: 10px;
   background:rgba(105, 74, 28, 0.1);
-  border-style: solid;
+  /*border-style: solid;*/
   box-sizing:border-box;
-border-width: 10px;
+/*border-width: 10px;
 -moz-border-image: url(../img/borderTimbre.png) 12 round;
 -webkit-border-image: url(../img/borderTimbre.png) 12 round;
 -o-border-image: url(../img/borderTimbre.png) 12 round;
 border-image: url(../img/borderTimbre.png) 12  round;
-      border-image-outset: 0px;
+      border-image-outset: 0px;*/
 
 }
 .border-timbre2{

@@ -39,12 +39,12 @@ ul.product_list .color-list-container {
 ul.product_list .product-image-container {
   text-align: center; }
   ul.product_list .product-image-container img {
-    margin: 0 auto;  border-style: solid;
-border-width: 7px;
+    margin: 0 auto;  border: none;
+/*border-width: 7px;
 -moz-border-image: url(../img/borderTimbre.png) 12 round;
 -webkit-border-image: url(../img/borderTimbre.png) 12 round;
 -o-border-image: url(../img/borderTimbre.png) 12 round;
-border-image: url(../img/borderTimbre.png) 12  round; }
+border-image: url(../img/borderTimbre.png) 12  round;*/ }
   ul.product_list .product-image-container .quick-view-wrapper-mobile {
     display: none; }
     ul.product_list .product-image-container .quick-view-wrapper-mobile .quick-view-mobile {
@@ -167,7 +167,7 @@ ul.product_list .functional-buttons div.compare a.checked:before {
 Product list(Grid) Styles
 ********************************************************/
 ul.product_list.grid > li {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   text-align: center; }
   @media (min-width: 480px) and (max-width: 767px) {
     ul.product_list.grid > li {
@@ -176,14 +176,8 @@ ul.product_list.grid > li {
   ul.product_list.grid > li .product-container {
     height: 300px;
     background:rgba(105, 74, 28, 0.1);
-    padding: 0;
-     border-style: solid;
-border-width: 7px;
--moz-border-image: url(../img/borderTimbre.png) 12 round;
--webkit-border-image: url(../img/borderTimbre.png) 12 round;
--o-border-image: url(../img/borderTimbre.png) 12 round;
-border-image: url(../img/borderTimbre.png) 12  round;
-border-image-outset: 10px;
+    padding: 7px;
+     border:none;
     position: relative; }
      ul.product_list.grid > li.hovered .product-container {
     background:rgba(108, 162, 44, 0.7);
@@ -222,8 +216,8 @@ border-image-outset: 10px;
     ul.product_list.grid > li .product-container .product-desc {
       display: none; }
     ul.product_list.grid > li .product-container .content_price {
-      padding-bottom: 0px;    position: absolute;
-    bottom: 0px;    width: 100%;
+      padding-bottom: 0px;    position: absolute;left:0px;
+    bottom: 10px;    width: 100%;
       line-height: 21px; }
     ul.product_list.grid > li .product-container .old-price,
     ul.product_list.grid > li .product-container .price,
@@ -431,7 +425,7 @@ Product list(Index page) Styles
 }
 .button.lnk_view{font-family: octin,Arial, Helvetica, sans-serif;color: #333;padding: 0;border: 1px solid;font-size: 17px;display:inline-block;border: 1px solid black !important;}
 
-.button-container{ position: absolute;top: 160px;left: 0;right: 0;height:50px;}
+.button-container{ position: absolute;top: 103px;left: 0;right: 0;height:50px;}
 
 .fa-cart:before {content: "\f07a";display: block;font-family: "FontAwesome";font-size: 17px;width: 100%;text-align: center; }
 ul.product_list.grid > li .product-container .button-container .ajax_add_to_cart_button, ul.product_list.grid > li .product-container .button-container span.button, ul.product_list.grid > li .product-container .button-container .lnk_view

@@ -4,12 +4,23 @@
 #header .shopping_cart {
   position: relative;
   float: right;
-  padding-top: 50px; }
+  padding: 45px 30px 0px 30px; }
   #header .shopping_cart .imagepannier{
-  position: absolute;
-left: 37px;bottom : 25px;
-background:url(../../../img/pannier.png);
-width:110px;height:106px;}
+float:left;
+    color : #322406;
+padding: 16px 0px 0px 0px;
+/*background:url(../../../img/pannier.png);*/
+width:50px;height:50px;} 
+  #header .shopping_cart:hover .imagepannier{
+    color : #db007b;
+} 
+#header .shopping_cart .imagepannier:before{
+    content: "\f07a";
+    display: block;
+    font-family: "FontAwesome";
+    font-size: 40px;
+    width: 100%;
+    text-align: center;}
 .totalpricecartheader{display:block;}
 /*  #header .shopping_cart > a:first-child:after {
     content: "\f0d7";
